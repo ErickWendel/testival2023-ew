@@ -1,0 +1,28 @@
+{
+  "name": "starter",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node index.js",
+    "test:jest": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules npx jest test/*jest**",
+    "test:native": "NODE_ENV=test node --test test/*nolibs**",
+    "test:jest:watch": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll test/*jest**",
+    "test:native:watch": "NODE_ENV=test node --watch --test test/*nolibs**"
+  },
+  "type": "module",
+  "engines": {
+    "node": "v18.16.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "erickwendel",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^29.5.0",
+    "portfinder": "^1.0.32",
+    "supertest": "^6.2.2"
+  }
+}
